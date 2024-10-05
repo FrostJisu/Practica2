@@ -1,0 +1,353 @@
+@font-face {
+    font-family: 'minecraft';
+    src: url('fonts/minecraft_font.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'minecraft', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.Cesped {
+    height: 120px;
+    background-repeat: repeat;
+    background-size: auto;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('img/grass_dirt_texture.png');
+}
+
+.Tierra {
+    height: 100%;
+    background-repeat: repeat;
+    background-size: auto;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/dirt_texture.png');
+}
+
+.Piedra {
+    height: 100%;
+    background-repeat: repeat;
+    background-size: auto;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('img/stone_texture.png');
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.Piedra-2 {
+    height: 100%;
+    background-repeat: repeat;
+    background-size: auto;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('img/stone_texture.png');
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    padding-bottom: 20px;
+}
+
+.Piedra-3 {
+    height: 100%;
+    background-repeat: repeat;
+    background-size: auto;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('img/Deepslate_29_JE3.png');
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.Piedra-2 h2 {
+    z-index: 2;
+    text-align: center;
+    color: white;
+    margin-top: 0;
+}
+
+.Piedra-2 p {
+    z-index: 2;
+    color: white;
+    font-size: 25px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.Piedra-2 img {
+    z-index: 2;
+    align-self: center;
+}
+
+h2{
+    color: white;
+    font-size: 35px;
+    margin: 0;
+}
+
+.Piedra h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.Piedra-3 h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.subtitulo{
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+.Subtitulo2{
+    font-size: 45px;
+}
+
+.img-piedra {
+    max-width: 70%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.video-container {
+    position: relative;
+    width: 80%;
+    padding-bottom: 45%;
+    height: 0;
+    margin-right: 20%;
+    margin-left: 9%;
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.p-inicio{
+    font-size: 28px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.izquierda, .derecha {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        margin-bottom:  auto;
+}
+
+.img-inicial{
+    width: 60%;
+}
+
+.mods-div {
+    display: flex;
+    gap: 10px; 
+}
+
+.mod-link {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.mod-link:hover {
+    background-color: #45a049;
+}
+
+.mod-link:hover {
+    background-color: #45a049;
+}
+
+.mod-link:active {
+    background-color: #3e8e41;
+}
+
+.logo{
+    width: 60px;
+}
+
+.navbar {
+    background-color: rgba(40, 40, 40, 0.5);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navbar ul img {
+    height: 40px;
+    margin-right: 20px;
+}
+
+.navbar ul li {
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    display: block;
+}
+
+.navbar ul li a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+
+div {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    font-size: 60px;
+    margin-top: 0;
+}
+
+
+
+p {
+    line-height: 1.6;
+    color: white;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+/* Estilos del formulario de contacto */
+.formulario-contacto {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-image: url('img/Madera.png'); /* Ruta de la imagen de fondo */
+    background-repeat: repeat; /* Repite la imagen en mosaico */
+    background-size: auto; /* Mantiene el tamaño original del patrón */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: auto;
+}
+
+
+.form-group {
+    width: 48%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+
+.form-group-full {
+    width: 100%;
+}
+
+label {
+    font-size: 1.5rem;
+    color: white;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+    border: 1px solid #bdc3c7;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+
+
+
+
+
+
+
+
+
+.footer {
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/Bedrock_29_JE2_BE2.png');
+    background-repeat: repeat;
+    background-size: auto;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.footer span {
+    font-weight: bold;
+}
